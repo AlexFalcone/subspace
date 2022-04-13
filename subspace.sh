@@ -15,7 +15,7 @@ echo "export NICKNAME="$1"" >> ~/.bash_profile
 echo "export SUBSPACE_ADDRESS="$2"" >> ~/.bash_profile
 source ~/.bash_profile
 echo "моникер: '$NICKNAME', кошелёк: '$SUBSPACE_ADDRESS'."
-sleep 5
+sleep 10
 
 sudo tee <<EOF >/dev/null /etc/systemd/journald.conf
 Storage=persistent
